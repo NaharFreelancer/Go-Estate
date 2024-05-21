@@ -1,0 +1,25 @@
+/* menu bar start*/
+
+@media screen and (max-width: 1399px) {
+    .nav__middle ul li {
+      padding: 0 10px;
+    }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .menuIcon {
+      display: block;
+    }
+    .nav__middle,
+    .nav__right {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .mobile__menu {
+      width: 100%;
+    }
+  }
+  
+  /* Navbar End */
