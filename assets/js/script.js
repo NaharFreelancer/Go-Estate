@@ -64,13 +64,15 @@ $(".feature_slider").slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
+  centerMode: true, // Enable center mode
+  centerPadding: '30px', // Add padding around the centered slide
 
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1100,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true,
       },
@@ -93,31 +95,75 @@ $(".feature_slider").slick({
 });
 // ========feature section slider end/=====/
 // ========customer section slider start/=====/
+// $(".customer_slider").slick({
+//   dots: false,
+//   infinite: true,
+//   loop:false,
+//   autoplay:true,
+//   speed: 300,
+//   centerPadding: "30px",
+//   spaceBetween: 30,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   arrows: true,
+
+  
+//   prevArrow:
+//     '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>',
+//   nextArrow:
+//     '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></i></button>',
+//   responsive: [
+//     {
+//       breakpoint: 1100,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: false,
+//       },
+//     },
+//     {
+//       breakpoint: 800,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//       },
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       },
+//     },
+//   ],
+// });
+
 $(".customer_slider").slick({
   dots: false,
   infinite: true,
-  loop:false,
-  autoplay:true,
+  autoplay: true,
   speed: 300,
-  centerPadding: "30px",
-  spaceBetween: 30,
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
-
+  centerMode: true, // Enable center mode
+  centerPadding: '30px', // Add padding around the centered slide
   
   prevArrow:
     '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>',
   nextArrow:
-    '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></i></button>',
+    '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>',
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1100,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '30px', // Ensure this is included in the breakpoint settings
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
@@ -125,20 +171,25 @@ $(".customer_slider").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '30px', // Ensure this is included in the breakpoint settings
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '30px', // Ensure this is included in the breakpoint settings
       },
     },
   ],
 });
+
 // ========customer section slider end/=====/
 
-
+// ========faq section js code start/=====/
 function toggleFaq(element) {
   // Get the parent .faq_parent element
   const faqParent = element.closest('.faq_parent');
@@ -158,3 +209,5 @@ function toggleFaq(element) {
   // Toggle the active class for the question to change its color
   element.classList.toggle('active');
 }
+// ========faq section js code end/=====/
+

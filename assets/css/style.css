@@ -13,7 +13,7 @@
     top: 10px;
     right: 0;
     bottom: 0;
-    width: 50%; /* Set the width to cover the right half */
+    width: 50%; 
     background-image: url(../images/hero-bg.png);
     background-position: right;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@
 .feature_card:hover {
   border-bottom: 2px solid #F90;
   background: #FFF;
-  box-shadow: 0px 80px 120px 0px rgba(51, 51, 51, 0.10);
+  /* box-shadow: 0px 80px 120px 0px rgba(51, 51, 51, 0.10); */
   cursor: pointer;
   color: #F90;
 }
@@ -199,6 +199,11 @@
 .feature_slider{
   padding-bottom: 40px;
 }
+.feature_slider .slick-slide {
+  margin: 0 15px; /* Adjust the margin as needed for 30px total space */
+}
+
+
 .feature_card .btn_dark_small{
   position: absolute;
   top: 24px;
@@ -211,6 +216,9 @@
   line-height: 32.036px; /* 200% */
 }
 /* feature section css end */
+
+
+
 .property_section{
   padding-bottom: 140px;
 }
@@ -392,6 +400,7 @@
 .agent_social_media{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
   font-size: 24px;
 }
@@ -408,6 +417,9 @@
   align-items: center;
  gap: 20px;
 }
+.app_img_parent a{
+  cursor: pointer;
+}
 /* app section css end */
 .customer_section{
   margin: 140px 0;
@@ -423,8 +435,8 @@ padding-bottom: 56px;
   padding: 100px 0;
 }
 .customer_slider_content{
-  padding: 69px 30px;
-  margin-right:30px;
+  padding: 69px 28px;
+  /* margin-right:30px; */
   border-radius: 32px;
   background: #FFF;
   
@@ -433,6 +445,20 @@ padding-bottom: 56px;
   /* border: 1px solid red; */
   text-align: center;
 }
+
+
+/* Add margin to the slick slides */
+.customer_slider .slick-slide {
+  margin: 0 15px; /* Adjust the value as needed for desired spacing */
+}
+
+/* Adjust container to compensate for the added margins */
+.customer_slider .slick-list {
+  margin: 0 -15px; /* Should match the margin value of the slick slides */
+}
+
+
+
 
 .customer_img {
   display: flex;
@@ -494,7 +520,7 @@ padding-bottom: 56px;
 
 .faq_question {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 27px;
   cursor: pointer;
@@ -523,7 +549,8 @@ padding-bottom: 56px;
 }
 
 .faq_parent.active {
-  border-color: #F90;
+  /* border-color: #F90; */
+  border: 2px solid #F90;
 }
 
 .faq_question.active,
