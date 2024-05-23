@@ -64,7 +64,7 @@ $(".feature_slider").slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
-  centerMode: true, // Enable center mode
+  // centerMode: true, // Enable center mode
   centerPadding: '30px', // Add padding around the centered slide
 
   responsive: [
