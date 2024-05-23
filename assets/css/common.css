@@ -56,7 +56,7 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 25px 0px;
+  padding: 20px 0px;
 }
 .nav__middle a.active {
   /*border-bottom: 5px solid #FF9900;
@@ -73,7 +73,7 @@ a {
   height: 5px; /* Adjust the thickness of the underline */
   background-color: #FF9900; /* Adjust the color of the underline */
   position: absolute;
-  bottom: -43px; /* Adjust the gap between the text and the underline */
+  bottom: -38px; /* Adjust the gap between the text and the underline */
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100px; /* Adjust the border-radius as needed */
@@ -85,7 +85,7 @@ a {
 .nav__middle ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 .nav__middle ul li a {

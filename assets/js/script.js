@@ -95,49 +95,6 @@ $(".feature_slider").slick({
 });
 // ========feature section slider end/=====/
 // ========customer section slider start/=====/
-// $(".customer_slider").slick({
-//   dots: false,
-//   infinite: true,
-//   loop:false,
-//   autoplay:true,
-//   speed: 300,
-//   centerPadding: "30px",
-//   spaceBetween: 30,
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   arrows: true,
-
-  
-//   prevArrow:
-//     '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>',
-//   nextArrow:
-//     '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></i></button>',
-//   responsive: [
-//     {
-//       breakpoint: 1100,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         dots: false,
-//       },
-//     },
-//     {
-//       breakpoint: 800,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1,
-//       },
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       },
-//     },
-//   ],
-// });
 
 $(".customer_slider").slick({
   dots: false,
@@ -190,6 +147,27 @@ $(".customer_slider").slick({
 // ========customer section slider end/=====/
 
 // ========faq section js code start/=====/
+// function toggleFaq(element) {
+//   // Get the parent .faq_parent element
+//   const faqParent = element.closest('.faq_parent');
+  
+//   // Get the answer element
+//   const answer = element.nextElementSibling;
+  
+//   // Toggle the 'active' class on the answer and parent div
+//   answer.classList.toggle('active');
+//   faqParent.classList.toggle('active');
+  
+//   // Toggle the icon
+//   const icon = element.querySelector('i');
+//   icon.classList.toggle('fa-plus');
+//   icon.classList.toggle('fa-xmark');
+  
+//   // Toggle the active class for the question to change its color
+//   element.classList.toggle('active');
+// }
+
+
 function toggleFaq(element) {
   // Get the parent .faq_parent element
   const faqParent = element.closest('.faq_parent');
@@ -197,17 +175,31 @@ function toggleFaq(element) {
   // Get the answer element
   const answer = element.nextElementSibling;
   
-  // Toggle the 'active' class on the answer and parent div
-  answer.classList.toggle('active');
-  faqParent.classList.toggle('active');
-  
-  // Toggle the icon
-  const icon = element.querySelector('i');
-  icon.classList.toggle('fa-plus');
-  icon.classList.toggle('fa-xmark');
-  
-  // Toggle the active class for the question to change its color
-  element.classList.toggle('active');
+  // Check if this answer is already active
+  const isActive = answer.classList.contains('active');
+
+  // Close all other active FAQ items
+  document.querySelectorAll('.faq_parent .faq_answer.active').forEach((activeAnswer) => {
+    activeAnswer.classList.remove('active');
+    activeAnswer.previousElementSibling.classList.remove('active');
+    activeAnswer.closest('.faq_parent').classList.remove('active');
+    activeAnswer.previousElementSibling.querySelector('i').classList.add('fa-plus');
+    activeAnswer.previousElementSibling.querySelector('i').classList.remove('fa-xmark');
+  });
+
+  // Toggle the 'active' class on the answer and parent div only if it was not active before
+  if (!isActive) {
+    answer.classList.add('active');
+    faqParent.classList.add('active');
+    element.classList.add('active');
+    const icon = element.querySelector('i');
+    icon.classList.remove('fa-plus');
+    icon.classList.add('fa-xmark');
+  }
 }
+
+
+
+
 // ========faq section js code end/=====/
 
