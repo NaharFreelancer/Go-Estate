@@ -7,6 +7,23 @@
     overflow: hidden;
 }
 
+
+.hero_sm_img {
+  overflow: hidden;
+  border-radius: 100px;
+  display: inline-flex;
+}
+
+.hero_sm_img img {
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.hero_sm_img img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
 .hero_section::after {
     content: "";
     position: absolute;
