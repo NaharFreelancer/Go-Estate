@@ -156,8 +156,66 @@ padding: 50px 0;
 .choose_img {
   padding-left: 0px;
 }
+/* ============================================== */
+/* ============================================== */
+.fs-18 {
+  font-size: 16px;
+}
+.about_hero_text {
+  padding: 20px 0;
+}
+.fs-16-gray {
+  line-height: 25.036px;
+}
+.about_card_title {
+  padding-bottom: 0px;
+}
+.about_hero_card {
+  padding: 20px 0 20px 20px;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.about_hero_section {
+  padding: 140px 0 80px;
+}
+.play-icon {
+  font-size: 2.5em;
+  width: 76px;
+  height: 76px;
+}
+.about_service_section {
+  padding: 90px 0;
+}
+.about_service_text {
+  padding: 18px 0;
+}
+.service_row {
+  padding: 55px 0;
+}
+.service_property_text {
+  padding: 12px 0 20px;
+}
+.counting_section {
+  padding: 40px 0;
+}
+.fs-48-white {
+  font-size: 44.054px;
+}
+.management_section {
+  padding: 100px 0;
+}
+.partner_title {
+  padding-bottom: 45px;
+}
+.partner_section {
+  padding-bottom: 90px;
+}
+
+
+
   }
 
+/* ============================================== */
 /* ============================================== */
   @media screen and (max-width: 768px) {
 
@@ -294,6 +352,86 @@ padding: 50px 0;
 .faq_section {
   padding-bottom: 60px;
 }
+/* ============================================================= */
+/* ============================================================= */
+
+.about_hero_title{
+  text-align: center;
+}
+.about_hero_text {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.about_hero_card {
+  width: 70%;
+  margin: auto;
+  border: 2px solid #e7e7e7;
+  margin-bottom: 20px;
+}
+.about_hero_img {
+  text-align: center;
+}
+.play-icon {
+  font-size: 2em;
+  width: 66px;
+  height: 66px;
+}
+.about_service_section {
+  padding: 80px 0 60px;
+}
+.orange_title_sub {
+  padding: 20px 0 6px;
+  text-align: center;
+}
+.about_service_title{
+  text-align: center;
+}
+.about_service_text {
+  padding: 15px 0;
+  text-align: center;
+}
+.about_service_text2{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.service_row{
+  flex-direction: column-reverse;
+}
+.about_service_rightside {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.about_service_text3{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.about_service_img, .service_property_title, .service_property_text, .mangament_img, .management_name, .management_text {
+  text-align: center;
+}
+.counting_parent {
+  justify-content: space-around;
+}
+.management_section {
+  padding: 80px 0;
+}
+.partner_title {
+  padding-bottom: 35px;
+}
+.partner_section {
+  padding-bottom: 80px;
+}
+.partner_parent {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.partner_img .img-fluid {
+  max-width: 90%;
+}
+
 
 
 }
@@ -314,7 +452,7 @@ padding: 50px 0;
   padding: 15px 0 40px 0;
 }
 .fs-18 {
-  font-size: 16px;
+  font-size: 14px;
 }
 .search_area {
   padding: 40px;
@@ -447,6 +585,73 @@ padding: 50px 0;
 .address_parent {
   padding: 0 0 20px 20px;
 }
+/* =========================================== */
+.about_hero_card {
+  width: 100%;
+  padding: 15px;
+  gap: 20px;
+}
+.about_hero_section {
+  padding: 130px 0 70px;
+}
+.play-icon {
+  font-size: 2em;
+  width: 55px;
+  height: 55px;
+}
+.about_service_section {
+  padding: 60px 0;
+}
+.about_service_text {
+  padding: 10px 0;
+}
+.service_row {
+  padding: 50px 0;
+}
+.service_property_text {
+  padding: 0px 0 20px;
+}
+.counting_parent {
+  flex-direction: column;
+  gap: 20px;
+}
+.fs-48-white {
+  font-size: 40.054px;
+}
+.fs-24-orange {
+  font-size: 22px;
+}
+.fs-48 {
+  font-size: 28px;
+}
+.fs-18-333 {
+  font-size: 16.02px;
+}
+.management_section {
+  padding: 70px 0;
+}
+.partner_title {
+  padding-bottom: 30px;
+}
+.fs-32-k {
+  font-size: 28px;
+}
+.partner_parent {
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+}
+
+.partner_img .img-fluid {
+  max-width: 80%;
+  text-align: center;
+}
+
+.partner_section {
+  padding-bottom: 70px;
+}
+/* =========================================== */
+
 }
 
 
@@ -571,10 +776,58 @@ padding: 50px 0;
 .faq_parent {
   padding: 18px;
 }
+/* =========================================== */
+.about_hero_card {
+  padding: 10px;
+  gap: 15px;
+}
+.about_hero_section {
+  padding: 120px 0 60px;
+}
+.about_service_section {
+  padding: 50px 0;
+}
+.service_row {
+  padding: 40px 0;
+}
+.fs-22 {
+  font-size: 18px;
+}
+.fs-48-white {
+  font-size: 37.054px;
+}
+.counting_parent {
+  gap: 15px;
+}
+.fs-24-orange {
+  font-size: 20px;
+}
+.fs-48 {
+  font-size: 25px;
+}
+.fs-18-333 {
+  font-size: 15.02px;
+}
+.management_section {
+  padding: 60px 0;
+}
 
+.partner_img .img-fluid {
+  max-width: 70%;
+}
+.partner_parent {
+  gap: 30px;
+}
+.partner_section {
+  padding-bottom: 60px;
+}
+/* ============================================== */
 
 
 }
+
+
+
 
 
 

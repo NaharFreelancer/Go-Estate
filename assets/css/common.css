@@ -334,6 +334,13 @@ line-height: normal;
   font-weight: 700;
   line-height: 48.054px; /* 150% */
 }
+.fs-32-k{
+  color: var(--Secondary-Color, #000);
+  font-family: Syne;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+}
 .fs-32-inter{
   color: var(--Text-Title, #333);
   font-family: Inter;
@@ -480,6 +487,13 @@ line-height: 150%; /* 36px */
   font-size: 18px;
   font-weight: 400;
 }
+.fs-18-333 {
+  color: var(--Text-Color-04, #333);
+  font-family: Inter;
+  font-size: 18.02px;
+  font-weight: 600;
+  line-height: 150%; /* 27.03px */
+}
 .fs-18-500 {
   color: var(--Secondary-Color, #000);
   font-family: Inter;
@@ -521,6 +535,13 @@ line-height: 30.042px; /* 171.429% */
   font-family: Inter;
   font-size: 16px;
   font-weight: 700;
+  line-height: 32px; /* 200% */
+}
+.fs-16-k-light {
+  color: var(--Secondary-Color, #000);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 32px; /* 200% */
 }
 .fs-14{
@@ -750,22 +771,15 @@ li.slick-active {
 /* =======zoom img  css start ======*/
 
 .zoom-img {
-  /* max-width: 574px; */
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  /* border-radius: 51px; */
-  border-radius: 13px 13px 0 0;
+  border-radius: 40px;
 
 }
-.zoom-img .img1{
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 13px 13px 0 0;
-}
+
 .zoom-img img {
-  /* border-radius: 51px; */
+  border-radius: 40px;
   overflow: hidden;
   /* transition: 0.3s ease-in-out; */
   transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;

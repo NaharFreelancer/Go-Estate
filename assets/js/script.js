@@ -198,8 +198,38 @@ function toggleFaq(element) {
   }
 }
 
-
-
-
 // ========faq section js code end/=====/
+
+
+///---- counting animation start---///
+
+const counterUp = window.counterUp.default;
+
+const callback = entries => {
+    entries.forEach(entry => {
+        const el = entry.target;
+        if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+            counterUp(el, {
+                duration: 2000,
+                delay: 16,
+            });
+            el.classList.add('is-visible');
+        }
+    });
+};
+
+// Select all elements with the class 'counter'
+const elements = document.querySelectorAll('.counter');
+
+// Create an IntersectionObserver for each element
+const observers = [];
+elements.forEach(el => {
+    const observer = new IntersectionObserver(callback, { threshold: 1 });
+    observer.observe(el);
+    observers.push(observer);
+});
+
+
+
+///---- counting animation end---///
 
