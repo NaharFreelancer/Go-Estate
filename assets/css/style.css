@@ -1,3 +1,5 @@
+
+
 .hero_section{
     padding: 155px 0 90px 0;
     position: relative;
@@ -6,8 +8,6 @@
     position: relative;
     overflow: hidden;
 }
-
-
 .hero_sm_img {
   overflow: hidden;
   border-radius: 100px;
@@ -22,7 +22,6 @@
   transform: scale(1.2);
   cursor: pointer;
 }
-
 
 .hero_section::after {
     content: "";
@@ -40,7 +39,7 @@
   
   .container {
     position: relative;
-    z-index: 1; /* Ensure content stays above pseudo-element */
+    z-index: 1; 
   }
 
 .hero_title::before {
@@ -492,9 +491,6 @@ padding-bottom: 56px;
   margin: 0 -15px; /* Should match the margin value of the slick slides */
 }
 
-
-
-
 .customer_img {
   display: flex;
   justify-content: center;
@@ -744,4 +740,146 @@ padding-bottom: 56px;
 .partner_title{
   text-align: center;
   padding-bottom: 73px;
+}
+/* ================================ */
+/* ================================ */
+/* ================================ */
+.listing_section{
+  padding: 140px 0;
+}
+.listing_text{
+  padding: 24px 0 56px;
+  text-align: center;
+}
+
+.listing_card {
+  border-radius: 20px;
+  border: 2px solid #FAFAFA;
+  background: #FFF;
+  transition: border-bottom 0.4s ease-in-out, background 0.4s ease-in-out, box-shadow 0.4s ease-in-out, color 0.4s ease-in-out;
+  position: relative;
+}
+
+.listing_card:hover {
+  background: #FFF;
+  box-shadow: 0px 80px 120px 0px rgba(51, 51, 51, 0.10);
+  cursor: pointer;
+  /* color: #F90; */
+}
+
+.listing_card .btn_dark_small, .home_description {
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out; /* Smooth transition for button hover effects */
+}
+
+.listing_card:hover .btn_dark_small {
+  background-color: #F90; /* Change background color on hover */
+  color: #000!important; /* Change text color on hover */
+  border-color: #F90; /* Ensure border color matches background color */
+}
+
+.listing_card:hover .home_description i, p{
+  color: #fff; /* Change icon color on hover */
+}
+.listing_card:hover .home_description{
+  background-color: #F90; /* Change icon color on hover */
+}
+.listing_card:hover .home_description_p{
+  color: #fff; /* Change icon color on hover */
+}
+/* ---- */
+
+.listing_card img{
+  border-radius: 20px;
+}
+
+.listing_description{
+  padding: 20px 0 20px 20px;
+}
+.listing_address_parent{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0 0px;
+  
+}
+.listing_address_parent i{
+  font-size: 25px;
+}
+
+.listing_card .btn_dark_small{
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 20;
+  color: var(--Secondary-Color, #000);
+  font-family: Inter;
+  font-size: 16.018px;
+  font-weight: 700;
+  line-height: 32.036px; /* 200% */
+}
+.home_description{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+  padding: 15px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.listing_custom_pb{
+padding-bottom: 63px;
+}
+
+/* pagination css start here */
+.pagination-section {
+  margin: 60px 0 0px 0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  --bs-pagination-active-bg: #f90;
+}
+.active > .page-link,
+.page-link.active {
+  color: #181818;
+}
+.page-link {
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #1a1a1a;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* pagination css end here */
+/* ================================================== */
+.search_section{
+  padding-bottom: 140px;
+}
+.search_img img {
+  position: relative;
+  border-radius: 21px;
+  
+}
+.best_section{
+  padding: 25px 28px 93px 30px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
+  backdrop-filter: blur(10px);
+  /* width: 497px; */
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 24px;
+}
+.best_text{
+  padding: 12px 0;
 }

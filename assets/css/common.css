@@ -247,6 +247,9 @@ a {
   padding: 20px 36px;
   white-space: nowrap;
 }
+.btn_orange2 {
+  padding: 15px 30px;
+}
 .btn_dark_small{
   background-color:#222430;
   color: #fff!important;
@@ -289,7 +292,7 @@ line-height: 150%; /* 120px */
 }
 .fs-54{
 color: var(--Neutral-Color, #FFF);
-font-family: Gilroy-Bold;
+font-family: Inter;
 font-size: 54px;
 font-style: normal;
 font-weight: 400;
@@ -417,6 +420,14 @@ line-height: 150%; /* 36px */
   font-size: 22px;
   font-weight: 700;
   line-height: 150%; /* 33px */
+}
+.fs-22-white{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 36px; /* 163.636% */
 }
 .fs-22-K{
   color: var(--Text-Color-04, #000);

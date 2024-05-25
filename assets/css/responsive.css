@@ -210,7 +210,37 @@ padding: 50px 0;
 .partner_section {
   padding-bottom: 90px;
 }
+/* ============================================== */
+/* ============================================== */
 
+.listing_text {
+  padding: 20px 0 45px;
+}
+.fs-56 {
+  font-size: 50px;
+}
+.listing_section {
+  padding: 100px 0;
+}
+.fs-54 {
+  font-size: 30px;
+}
+.best_text {
+  padding: 5px 0;
+}
+.fs-22-white {
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn_orange {
+  padding: 10px 20px;
+}
+.button_reverse {
+  font-size: 16px;
+}
+.search_section {
+  padding-bottom: 100px;
+}
 
 
   }
@@ -431,7 +461,32 @@ padding: 50px 0;
 .partner_img .img-fluid {
   max-width: 90%;
 }
+.home_description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.fs-56 {
+  font-size: 45px;
+}
+.listing_text {
+  padding: 0px 0 45px;
+}
+.listing_address_parent  i{
+  font-size: 20px;
+}
 
+.pagination {
+  gap: 12px;
+}
+.page-link {
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+}
+.listing_section {
+  padding: 80px 0;
+}
 
 
 }
@@ -651,6 +706,47 @@ padding: 50px 0;
   padding-bottom: 70px;
 }
 /* =========================================== */
+.fs-56 {
+  font-size: 40px;
+}
+.listing_section {
+  padding: 120px 0 70px ;
+}
+.pagination {
+  gap: 8px;
+}
+.page-link {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.fs-54 {
+  font-size: 18px;
+}
+.best_section {
+  padding: 12px;
+  border-radius: 10px;
+  top: 10px;
+  bottom: 10px;
+  left: 24px;
+}
+.fs-22-white {
+  font-size: 12px;
+  line-height: 16px;
+}
+.btn_orange2{
+  display: none;
+}
+.search_section {
+  padding-bottom: 70px;
+}
+
+.listing_custom_pb {
+  padding-bottom: 40px;
+}
+
+
 
 }
 
@@ -822,6 +918,34 @@ padding: 50px 0;
   padding-bottom: 60px;
 }
 /* ============================================== */
+.listing_section {
+  padding: 100px 0 70px;
+}
+.fs-56 {
+  font-size: 32px;
+}
+.fs-17 {
+  font-size: 16px;
+}
+
+.listing_custom_pb {
+  padding-bottom: 30px;
+}
+.listing_section {
+  padding: 100px 0 50px;
+}
+.pagination-section {
+  margin: 44px 0 0px 0;
+}
+.best_text{
+  display: none;
+}
+.best_section{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  left: 25%;
+}
 
 
 }
