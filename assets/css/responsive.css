@@ -27,6 +27,13 @@
 
   @media screen and (max-width: 1024px) {
 
+    .mobile__menu ul li a {
+      font-size: 20px;
+  }
+  .mobile__menu ul li {
+    margin-bottom: 20px;
+}
+
     .hero_section::after {
       background: none;
     }
@@ -219,7 +226,7 @@ padding: 50px 0;
 .fs-56 {
   font-size: 50px;
 }
-.listing_section {
+.listing_search_section {
   padding: 100px 0;
 }
 .fs-54 {
@@ -238,10 +245,37 @@ padding: 50px 0;
 .button_reverse {
   font-size: 16px;
 }
-.search_section {
+.listing_search_section {
   padding-bottom: 100px;
 }
+.search_img {
+  height: 290px;
+}
 
+/* ============================================== */
+/* ============================================== */
+.service_section{
+  padding: 140px 0 0;
+}
+.custom_style {
+  margin-bottom: 110px;
+}
+.service_img img {
+  border-radius: 34px;
+}
+.service_img {
+  padding: 40px;
+}
+.service_img::before {
+  border-radius: 35px;
+}
+.real_estate_content {
+  padding-left: 0px;
+}
+.real_estate_content_text {
+  padding: 16px 0 20px 0;
+  text-align: justify;
+}
 
   }
 
@@ -484,9 +518,60 @@ padding: 50px 0;
   height: 44px;
   font-size: 18px;
 }
-.listing_section {
+.listing_search_section{
   padding: 80px 0;
 }
+.search_img {
+  height: 250px;
+}
+.best_section_title{
+  font-size: 24px;
+}
+
+.best_section{
+  padding: 20px;
+}
+
+.best_text{
+  font-size: 14px;
+}
+/* ============================================================= */
+/* ============================================================= */
+
+.service_content_parent{
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.custom_style2{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.custom_style {
+  margin-bottom: 90px;
+}
+.service_img_section {
+  display: flex;
+  justify-content: center;
+}
+.real_state_section {
+  margin-bottom: 80px;
+}
+.real_estate_content_list_main {
+  justify-content: space-around;
+}
+.real_estate_content_text {
+  text-align: center;
+}
+.real_estate_content_title{
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+
+
+
 
 
 }
@@ -698,7 +783,7 @@ padding: 50px 0;
 }
 
 .partner_img .img-fluid {
-  max-width: 80%;
+  max-width: 70%;
   text-align: center;
 }
 
@@ -709,9 +794,9 @@ padding: 50px 0;
 .fs-56 {
   font-size: 40px;
 }
-.listing_section {
+/* .listing_section {
   padding: 120px 0 70px ;
-}
+} */
 .pagination {
   gap: 8px;
 }
@@ -735,16 +820,81 @@ padding: 50px 0;
   font-size: 12px;
   line-height: 16px;
 }
-.btn_orange2{
+.best_text{
   display: none;
 }
-.search_section {
+.listing_search_section {
   padding-bottom: 70px;
 }
 
 .listing_custom_pb {
   padding-bottom: 40px;
 }
+.search_img {
+  height: 150px;
+}
+.btn_orange2 {
+  padding: 6px 13px;
+  font-size: 13px;
+}
+.best_section_title{
+  padding-bottom: 10px;
+}
+.listing_search_section {
+  padding: 60px 0;
+}
+/* =========================================== */
+/* =========================================== */
+
+.fs-46 {
+  font-size: 38px;
+}
+.service_section {
+  padding: 120px 0 0;
+}
+.service_title {
+  padding-bottom: 8px;
+}
+.fs-32-inter {
+  font-size: 26.036px;
+}
+.service_tick i {
+  font-size: 20px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+.service_img {
+  padding: 30px;
+}
+.service_img::before {
+  border-radius: 30px;
+}
+.custom_style {
+  margin-bottom: 70px;
+}
+
+.service_img_2{
+  padding: 30px;
+
+}
+.service_img_2::before{
+  border-radius: 30px;
+
+}
+.real_state_section {
+  margin-bottom: 60px;
+}
+.real_state_section {
+  padding: 60px 0;
+}
+.real_estate_content_list_main {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+
+
 
 
 
@@ -909,7 +1059,7 @@ padding: 50px 0;
 }
 
 .partner_img .img-fluid {
-  max-width: 70%;
+  max-width: 60%;
 }
 .partner_parent {
   gap: 30px;
@@ -918,9 +1068,7 @@ padding: 50px 0;
   padding-bottom: 60px;
 }
 /* ============================================== */
-.listing_section {
-  padding: 100px 0 70px;
-}
+
 .fs-56 {
   font-size: 32px;
 }
@@ -931,7 +1079,7 @@ padding: 50px 0;
 .listing_custom_pb {
   padding-bottom: 30px;
 }
-.listing_section {
+.listing_search_section {
   padding: 100px 0 50px;
 }
 .pagination-section {
@@ -940,12 +1088,44 @@ padding: 50px 0;
 .best_text{
   display: none;
 }
-.best_section{
-  text-align: center;
-  display: flex;
-  align-items: center;
-  left: 25%;
+.btn_orange2 {
+  padding: 6px 13px;
+  font-size: 13px;
 }
+.best_section_title{
+  padding-bottom: 10px;
+}
+.listing_search_section {
+  padding: 50px 0;
+}
+/* ======================================= */
+/* ======================================= */
+.fs-46 {
+  font-size: 32px;
+}
+.service_title {
+  padding-bottom: 0px;
+}
+.fs-32-inter {
+  font-size: 23.036px;
+}
+
+.service_img img {
+  border-radius: 28px;
+}
+.service_img::before {
+  border-radius: 20px;
+}
+.service_img_2 img {
+  border-radius: 28px;
+}
+.service_img_2::before {
+  border-radius: 20px;
+}
+.custom_style {
+  margin-bottom: 60px;
+}
+
 
 
 }

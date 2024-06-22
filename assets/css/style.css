@@ -744,7 +744,7 @@ padding-bottom: 56px;
 /* ================================ */
 /* ================================ */
 /* ================================ */
-.listing_section{
+.listing_search_section{
   padding: 140px 0;
 }
 .listing_text{
@@ -860,26 +860,254 @@ padding-bottom: 63px;
 }
 /* pagination css end here */
 /* ================================================== */
-.search_section{
+.listing_search_section {
   padding-bottom: 140px;
 }
-.search_img img {
+.search_img {
+  background-image: url(../images/search_bg.png);
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-size: cover; /* Scales the background image to cover the entire section */
+  background-position: center; /* Centers the background image */
+  border-radius: 21px;
+  width: 100%; /* or a specific width like 500px */
+  height: 384px;
   position: relative;
+}
+
+/* .search_img {
+  position: relative;
+  
+} */
+.search_img img {
   border-radius: 21px;
   
 }
 .best_section{
-  padding: 25px 28px 93px 30px;
+  padding: 25px 28px 24px 30px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.20);
   box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
   backdrop-filter: blur(10px);
-  /* width: 497px; */
   position: absolute;
   top: 24px;
   bottom: 24px;
   left: 24px;
+  z-index: 10;
 }
 .best_text{
   padding: 12px 0;
+}
+/* ====================================== */
+/* listing details css start */
+.listing_details{
+  margin: 140px 0;
+}
+
+.small-img-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+.small-img.selected {
+  border: 2px solid #f90; /* Add border to the selected small-img */
+}
+.house_bg_img img, .small-img-col img{
+  border-radius: 12px;
+}
+.house_bg_img{
+  margin: 24px 0 30px;
+}
+.small-img-group{
+  padding-bottom: 30px;
+}
+
+.house_description_section{
+  padding: 32px;
+  border-radius: 15px;
+  border: 1px solid #EEE;
+  background: #FFF;
+}
+#read-more-link{
+  color: var(--Text-Color-04, #333);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.house_details{
+  border-radius: 15px;
+  border: 1px solid #EEE;
+  background: #FFF9EF;
+  padding: 32px;
+  margin: 30px 0;
+
+}
+.unit_details_section{
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.93);;
+}
+.building_details_section{
+  padding-top: 32px;
+}
+.details_parent{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.details_child{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+}
+.details_title{
+  padding-bottom: 18px;
+}
+.more_info{
+  padding: 12px 0 18px;
+}
+.map_section{
+  padding: 34px 30px 30px 32px;
+  border-radius: 15px;
+  border: 1px solid #EEE;
+  background: #FFF;
+}
+iframe{
+  width: 100%;
+  height: 528px;
+  border-radius: 21px;
+  filter: invert(100%);
+}
+.map_title{
+  padding-bottom: 12px;
+}
+
+.map_section{
+  margin-bottom: 70px;
+}
+.text_bg_title{
+  border-radius: 7px;
+  background: #F1F1F1;
+  padding: 6px 0 6px 18px;
+  margin-bottom: 12px;
+}
+.property_details_title{
+  padding-bottom: 24px;
+}
+
+.list_title{
+  padding-left: 10px;
+  padding: 6px 0;
+}
+
+
+
+/* listing details css end */
+.service_section{
+  padding: 140px 0;
+}
+.service_title{
+  color: #000;
+  padding-bottom: 24px;
+  text-align: center;
+}
+.service_text{
+  padding-bottom: 31px;
+  text-align: center;
+
+}
+.service_img {
+  position: relative;
+  padding: 44px;
+}
+
+.service_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 37%;
+  bottom: 0;
+  background: #FFDCA3;
+  border-radius: 40px;
+  z-index: -1;
+}
+.service_img_2{
+  position: relative;
+  padding: 44px;
+
+
+}
+.service_img_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 37%;
+  bottom: 0;
+  background: #FFDCA3;
+  border-radius: 40px;
+  z-index: -2;
+}
+
+.service_img_2 img{
+  border-radius: 44px;
+}
+.service_img img{
+  border-radius: 44px;
+}
+.service_content_title{
+  font-weight: 600;
+  line-height: 48px;
+  padding-bottom: 12px;
+}
+.service_tick i{
+  background-color: #FF9900;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  
+}
+.custom_style{
+  display: flex;
+  align-items: center;
+  margin-bottom: 140px;
+}
+.real_state_section{
+  border: 1px solid #EEE;
+  background: #F6F6F6;
+  padding: 80px 0;
+  margin-bottom: 140px;
+}
+.real_estate_content{
+  padding-left: 50px;
+}
+.real_estate_content_title{
+  font-family: inter;
+}
+.real_estate_content_text{
+  padding: 16px 0 49px 0;
+  text-align: justify;
+}
+.real_estate_content_list_main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.real_estate_content_list_child{
+  display: flex;
+  align-items: center;
+  gap:8px;
+  padding-bottom: 16px;
+}
+
+.custom_service_design{
+  padding-top: 0!important;
 }

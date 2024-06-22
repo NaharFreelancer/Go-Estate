@@ -233,3 +233,54 @@ elements.forEach(el => {
 
 ///---- counting animation end---///
 
+
+///---- image swapping animation start---///
+
+var MainImg = document.getElementById("MainImg");
+var smallimg = document.getElementsByClassName("small-img");
+
+smallimg[0].onclick = function () {
+  MainImg.src = smallimg[0].src;
+};
+smallimg[1].onclick = function () {
+  MainImg.src = smallimg[1].src;
+};
+smallimg[2].onclick = function () {
+  MainImg.src = smallimg[2].src;
+};
+smallimg[3].onclick = function () {
+  MainImg.src = smallimg[3].src;
+};
+
+// var MainImg = document.getElementById("MainImg");
+// var smallimg = document.getElementsByClassName("small-img");
+
+for (var i = 0; i < smallimg.length; i++) {
+  smallimg[i].onclick = function (event) {
+    MainImg.src = event.target.src;
+
+    // Remove border from all small-img elements
+    for (var j = 0; j < smallimg.length; j++) {
+      smallimg[j].classList.remove("selected");
+    }
+
+    // Add border to the clicked small-img
+    this.classList.add("selected");
+  };
+}
+///---- image swapping animation end---///
+
+// ========read more js code start/=====/
+function showMore() {
+  var moreText = document.getElementById("more");
+  var moreLink = document.getElementById("read-more-link");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    moreLink.innerHTML = "...Read Less";
+  } else {
+    moreText.style.display = "none";
+    moreLink.innerHTML = "...Read More";
+  }
+}
+// ========read more js code end/=====/
