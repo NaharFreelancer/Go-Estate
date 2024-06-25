@@ -900,7 +900,7 @@ padding-bottom: 63px;
 /* ====================================== */
 /* listing details css start */
 .listing_details{
-  margin: 140px 0;
+  margin: 140px 0 0;
 }
 
 .small-img-group {
@@ -982,7 +982,7 @@ iframe{
   width: 100%;
   height: 528px;
   border-radius: 21px;
-  filter: invert(100%);
+  /* filter: invert(100%); */
 }
 .map_title{
   padding-bottom: 12px;
@@ -1008,6 +1008,28 @@ iframe{
 
 
 
+
+
+
+
+
+.floor_details{
+  border-radius: 15px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  padding: 34px 0 38px 34px;
+  margin: 48px 0 140px;
+}
+.floor_title{
+  padding-bottom: 38px;
+}
+.homes_title{
+  color: #000;
+  padding-bottom: 27px;
+}
+
+
+
 /* listing details css end */
 .service_section{
   padding: 140px 0;
@@ -1025,6 +1047,8 @@ iframe{
 .service_img {
   position: relative;
   padding: 44px;
+ 
+
 }
 
 .service_img::before {
@@ -1062,6 +1086,7 @@ iframe{
 .service_img img{
   border-radius: 44px;
 }
+
 .service_content_title{
   font-weight: 600;
   line-height: 48px;
@@ -1110,4 +1135,182 @@ iframe{
 
 .custom_service_design{
   padding-top: 0!important;
+}
+/* ========================================= */
+/* ========================================= */
+.blog_section{
+  padding: 140px 0;
+}
+
+.blog_title{
+  color: #000;
+  padding-bottom: 16px;
+}
+.blog_text{
+  padding-bottom: 32px;
+  text-align: center;
+}
+.blog_card{
+  border-radius: 16px;
+  border: 1px solid #EEE;
+  background: #FFF;
+
+
+  /* box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 590px; */
+
+}
+.blog_card img{
+  border-radius: 16px 16px 0 0;
+}
+.blog_date{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.blog_content{
+  padding:16px 20px  20px;
+}
+.date_parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog_content_title{
+  padding: 16px 0 12px;
+}
+.blog_content_text{
+  text-align: justify;
+  padding-bottom: 27px;
+}
+.prev_next_btn_parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+
+}
+.recent_post_card{
+  border-radius: 16px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  padding: 33px;
+  margin-bottom: 28px;
+}
+.post_title{
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px; /* 140% */
+}
+.date_parent2{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0 16px;
+
+}
+.post_text{
+  padding-bottom: 20px;
+}
+.newsletter_card{
+  border-radius: 16px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  padding: 43px 43px 32px;
+
+}
+.newsletter_text{
+  padding: 16px 0 33px;
+  line-height: 28px;
+}
+.goestate_email .form-control{
+  border-radius: 50px!important;
+  padding: 16px .75rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+/* ===================================== */
+/* ===================================== */
+.contactus_section{
+  padding: 140px 0;
+}
+.contact_text{
+  text-align: center;
+  padding: 8px 0 32px;
+}
+.contactus_area{
+  background: url(../images/contactus_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+  padding: 48px 0 68px;
+}
+.message_title{
+  padding-bottom: 18px;
+  text-align: left;
+}
+.contactus_input .form-control{
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: radial-gradient(374.14% 357.98% at -58.69% -219.08%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(14.393913269042969px);
+  padding: 20px 0 20px 29px;
+  color: #CACACA;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.office_address_parent{
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: radial-gradient(374.14% 357.98% at -58.69% -219.08%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(14.393913269042969px);
+  padding: 42px 33px 18px;
+}
+.address_title{
+  text-align: left;
+  padding-bottom: 19px;
+}
+.office_description{
+  padding-top:45px ;
+  padding-bottom: 68px;
+}
+.office_address_parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signup_section{
+  padding-bottom: 140px;
+}
+.signup{
+  border-radius: 12px;
+  background: var(--Color-01, #FFF9EF);
+  padding: 49px 0 49px 30px;
+}
+.signup_text{
+padding: 12px 0;
+}
+.email_field input {
+  background-color: transparent!important;
+  width: 100%;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 100px;
+
+}
+.email_field {
+  background-color: #FFF9EF;
+  border-radius: 100px;
+  /* padding: 8px; */
+  display: flex;
+  align-items: center;
+  max-width: 460px;
+  border: 1px solid var(--Text-Color-03, #606060);
+
 }

@@ -250,6 +250,18 @@ a {
 .btn_orange2 {
   padding: 15px 30px;
 }
+.btn_orange3{
+  background-color: #FF9900;
+  color: #181818;
+  border: 1px solid #FF9900;
+  padding: 17px 35px;
+
+}
+.btn_orange4{
+  padding: 6px 17px;
+  margin: 10px 0 14px;
+
+}
 .btn_dark_small{
   background-color:#222430;
   color: #fff!important;
@@ -266,6 +278,40 @@ a {
 .orange i:hover {
   color: #fff !important;
 }
+.btn_read{
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn_prev{
+  padding: 18px 15px;
+  font-size: 18px;
+  border: 1px solid var(--other-color-option-other-color-4-stroke, #EEE);
+  color: #747474;
+  width: 100%;
+
+}
+.btn_next{
+  padding: 18px 28px;
+  font-size: 18px;
+  border: 1px solid var(--other-color-option-other-color-4-stroke, #EEE);
+  color: #747474;
+  width: 100%;
+
+}
+.btn_long{
+  padding: 12px 148px;
+  width: 100%;
+}
+.btn_long_dark{
+  padding: 14px 148px;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+
+
+}
+
 
 /* different font size css */
 .fs-80 {
@@ -327,6 +373,14 @@ line-height: normal;
   font-size: 40px;
   font-weight: 700;
   line-height: 150%; /* 60px */
+}
+.fs-40-inter {
+  color: var(--Secondary-Color, #000);
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 140% */
 }
 
 .fs-32{
@@ -512,6 +566,15 @@ line-height: 150%; /* 36px */
   font-size: 18.02px;
   font-weight: 600;
   line-height: 150%; /* 27.03px */
+}
+.fs-18-C8C8C8 {
+  color: #C8C8C8;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  padding-bottom: 24px;
 }
 .fs-18-500 {
   color: var(--Secondary-Color, #000);
