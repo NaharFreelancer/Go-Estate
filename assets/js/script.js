@@ -284,3 +284,29 @@ function showMore() {
   }
 }
 // ========read more js code end/=====/
+
+
+
+//======= contact agent accrodion listing details page=========//
+function toggleAccordion() {
+  const content = document.getElementById('accordion-content');
+  const icon = document.getElementById('accordion-icon');
+  content.classList.toggle('active');
+  icon.classList.toggle('rotate');
+}
+
+//======= contact agent accrodion listing details page=========//
+
+//======= contact agent calendar listing details page=========//
+function selectDate(element, date) {
+  // Remove the 'selected' class from all calendar elements
+  const calendarChildren = document.querySelectorAll('.calender_child');
+  calendarChildren.forEach(child => child.classList.remove('selected'));
+
+  // Add the 'selected' class to the clicked element
+  element.classList.add('selected');
+
+  // Set the selected date in the input field
+  document.getElementById('selected-date').value = date;
+}
+//======= contact agent calendar listing details page=========//

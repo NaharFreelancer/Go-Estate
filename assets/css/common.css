@@ -201,11 +201,19 @@ a {
   color: var(--Neutral-08, #fff);
   border: 1px solid var(--Neutral-01, #181818);
 }
+.btn_dark2 {
+  padding: 10px 30px;
+  width: 100%;
+}
 .btn_light {
   background: none;
   color: #000;
   padding: 15px 60px;
   border: 1px solid var(--Neutral-01, #000);
+}
+.btn_light2 {
+  padding: 10px 10px!important;
+  width: 100%;
 }
 .btn_light_gray {
   background: none;
@@ -300,11 +308,11 @@ a {
 
 }
 .btn_long{
-  padding: 12px 148px;
+  padding: 12px 48px;
   width: 100%;
 }
 .btn_long_dark{
-  padding: 14px 148px;
+  padding: 10px 48px;
   background-color: #000;
   color: #fff;
   width: 100%;

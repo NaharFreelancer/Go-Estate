@@ -902,7 +902,9 @@ padding-bottom: 63px;
 .listing_details{
   margin: 140px 0 0;
 }
-
+.house_title{
+  margin-bottom: 24px;
+}
 .small-img-group {
   display: flex;
   align-items: center;
@@ -921,7 +923,7 @@ padding-bottom: 63px;
   border-radius: 12px;
 }
 .house_bg_img{
-  margin: 24px 0 30px;
+  margin: 0px 0 30px;
 }
 .small-img-group{
   padding-bottom: 30px;
@@ -995,7 +997,7 @@ iframe{
   border-radius: 7px;
   background: #F1F1F1;
   padding: 6px 0 6px 18px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 }
 .property_details_title{
   padding-bottom: 24px;
@@ -1003,14 +1005,28 @@ iframe{
 
 .list_title{
   padding-left: 10px;
-  padding: 6px 0;
+  padding-bottom: 30px;
+  font-weight: 400;
+  color: #000;
 }
+.info_title{
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.lot_land_parent{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+ 
+  
+}
+.list_title{
+  padding-bottom: 15px;
+}
+.lot_land_child2 .list_title{
+  padding-bottom: 15px;
 
-
-
-
-
-
+}
 
 
 .floor_details{
@@ -1026,6 +1042,115 @@ iframe{
 .homes_title{
   color: #000;
   padding-bottom: 27px;
+}
+
+.contact_agent_section{
+  border-radius: 15px;
+  border: 1px solid rgba(238, 238, 238, 0.93);
+  background: #FFF;
+  padding: 24px;
+  margin-bottom: 30px;
+
+}
+.contact_Agent_parent{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.contact_agent_child{
+  display: flex;
+  align-items: center;
+  gap:18px;
+}
+.contact_agent_title{
+  padding-bottom: 12px;
+}
+.contact_agent_input .form-control{
+  border-radius: 11px;
+  background: rgba(247, 247, 247, 0.93);
+  margin-bottom: 24px;
+  padding: 12px .75rem;
+}
+.contact_agent_input2{
+  padding-bottom: 24px;
+}
+
+
+.contact_agent_child i.rotate {
+  transform: rotate(180deg);
+}
+.accordion-content {
+  display: none;
+  margin-top: 20px;
+}
+.accordion-content.active {
+  display: block;
+}
+
+.calendar_parent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.calender_child{
+  border-radius: 11px;
+  background: var(--Color-01, #FFF9EF);
+  border-bottom: 1px solid #fff9ef;
+  padding: 17px 45px;
+  text-align: center;
+  margin-bottom: 24px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
+}
+.calender_child:hover{
+  border-radius: 11px;
+  border-bottom: 2px solid var(--Primary-Color, #F90);
+  background: var(--Neutral-Color, #FFF);
+  cursor: pointer;
+
+/* Shadow 1 */
+box-shadow: 0px 80px 120px 0px rgba(51, 51, 51, 0.10);
+}
+
+.calender_child.selected {
+  border-bottom: 2px solid var(--Primary-Color, #F90);
+  background: var(--Neutral-Color, #FFF);
+  box-shadow: 0px 80px 120px 0px rgba(51, 51, 51, 0.10);
+}
+.tour_category{
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding-bottom: 15px;
+}
+.contact_person{
+  border-bottom: 3px solid #F90;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.amount_label{
+  padding: 0  0  14px ;
+}
+
+.mortage_btn_parent{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.latest_property_child{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 24px;
+}
+.property_img img{
+  border-radius: 11px;
+}
+.property_price{
+  padding-bottom: 8px;
 }
 
 
@@ -1312,5 +1437,4 @@ padding: 12px 0;
   align-items: center;
   max-width: 460px;
   border: 1px solid var(--Text-Color-03, #606060);
-
 }

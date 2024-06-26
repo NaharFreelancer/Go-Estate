@@ -356,9 +356,21 @@ padding: 50px 0;
 .signup_section {
   padding-bottom: 100px;
 }
-
-
-
+/* ================================= */
+.calendar_parent {
+  flex-wrap: wrap;
+}
+.mortage_btn_parent {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.latest_property_child {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.property_details{
+  text-align: center;
+}
 
 
   }
@@ -726,8 +738,39 @@ padding: 50px 0;
 .signup_section {
   padding-bottom: 80px;
 }
+/* ============================================================= */
+.small-img-group {
+  gap: 20px;
+}
 
-
+.listing_details {
+  margin: 140px 0 100px;
+}
+.fs-46 {
+  font-size: 40px;
+}
+.listing_details {
+  margin: 120px 0 60px;
+}
+.fs-18-333 {
+  font-size: 16.02px;
+}
+.map_section {
+  margin-bottom: 50px;
+}
+.small-img-group {
+  gap: 15px;
+}
+.fs-28-inter {
+  font-size: 20px;
+}
+.fs-18-500 {
+  font-size: 17px;
+}
+.calender_child {
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -1008,6 +1051,7 @@ padding: 50px 0;
 
 .fs-46 {
   font-size: 38px;
+  line-height: 50px;
 }
 .service_section {
   padding: 120px 0 0;
@@ -1091,8 +1135,26 @@ padding: 50px 0;
 .signup_section {
   padding-bottom: 50px;
 }
-
-
+/* =========================================== */
+.house_details {
+  padding: 25px;
+  margin: 25px 0;
+}
+.details_parent {
+  flex-wrap: wrap;
+}
+.fs-28-inter {
+  font-size: 18px;
+}
+.fs-20-333 {
+  font-size: 16px;
+}
+.list_title {
+  padding-bottom: 10px;
+}
+.property_details {
+  text-align: left;
+}
 
 
 }
@@ -1355,6 +1417,24 @@ padding: 50px 0;
 .signup_section {
   padding-bottom: 20px;
 }
+/* ============================================ */
+.small-img-group {
+  gap: 10px;
+}
+.house_description_section {
+  padding: 22px;
+}
+.map_section {
+  padding: 20px;
+}
+.text_bg_title {
+  padding: 6px 0 6px 10px;
+  margin-bottom: 20px;
+}
+.latest_property_child {
+  flex-wrap: nowrap;
+}
+
 
 }
 
